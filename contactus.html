@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"><style>
+         *
+{
+   margin:0;
+   padding:0;
+   font-family: 'Poppins', sans-serif;
+}
+
+
+.header{
+
+    min-height:100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/for.jpeg);
+  
+    background-position:center;
+    background-size:cover;
+    position:relative;
+
+}
+
+nav{
+      display: flex;
+      padding: 2% 6%;
+      justify-content: space-between;
+      align-items: center;
+
+
+}
+nav img{
+width: 150px;
+
+
+
+}
+.nav-links{
+
+flex:1;
+text-align: right;
+}
+
+.nav-links ul li{
+
+list-style-type: none;
+display: inline-block;
+padding:8px 12px ;
+position: relative;
+
+}
+
+
+.nav-links ul li a{
+
+color: white;
+text-decoration: none;
+font-size: 13px;
+}
+
+
+.nav-links ul li::after{
+      content: "";
+      width: 0%;
+      height:2px;
+      background: #f44336;
+      display: block;
+      margin: auto;
+      transition:0.5s  ;
+}
+
+.nav-links ul li:hover::after{
+
+    width: 100%;
+}
+.text-box{
+width:90%;
+color:white;
+position: absolute;
+top: 50%;
+left:50%;
+transform:translate(-50%,-50%);
+text-align:center;
+
+
+
+}
+.text-box h1{
+font-size: 62px;
+
+
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color:#fff;
+}
+.hero-btn{
+display:inline-block;
+text-decoration: none;
+color: #fff;
+border: 1px solid #fff;
+padding: 12px 34px;
+font-size: 13px;
+background: transparent;
+position: relative;
+cursor: pointer;
+
+
+
+}
+.hero-btn:hover{
+  border: 1px solid #f44336;
+  background: #f44336;
+  transition: 1s;
+
+
+}
+
+nav .fa{
+    display:none;
+
+}
+
+
+@media(max-width:700px){
+.text-box h1{
+    font-size:20px;
+}
+
+.nav-links ul li{
+  display: block;
+
+
+}
+.nav-links {
+
+    position: absolute;
+    background: #f44336;
+    height: 100vh;
+    width: 200px;
+    top:0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  
+
+}
+nav .fa{
+   display: block;
+   color: #fff;
+   margin:10px;
+   font-size: 22px;
+   cursor:pointer;
+
+
+
+
+}
+
+.nav-links ul{
+
+padding: 30px;
+
+}
+
+} 
+
+
+
+
+body
+ {
+    background-color: #f9f9f9;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333333;
+}
+
+.contact-form {
+    width: 500px;
+    margin: auto;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contact-form h1 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #eaeaea;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333333;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #3498db;
+    border-color: #3498db;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.footer{
+        width:100%;
+        display:block;
+        overflow: hidden;
+        padding:4px 0;
+        box-sizing: border-box;
+        background-color:gray ;
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+   
+   url(images/watch1.png);
+   color: white;
+
+    }
+  
+
+.inner_footer{
+  display:block;
+  margin:0px auto;
+  width:1100px;
+  height: 100%;
+   color: white;
+
+}
+.inner_footer .logo_container{
+  width:25%;
+  float: left;
+  height:100%;
+  display: block;
+   color: white;
+
+}
+
+.inner_footer .logo_container img{
+
+width:50%;
+height: auto;
+ color: white;
+}
+
+
+.inner_footer .footer_third{
+
+width: calc(21.6666666667% - 20px);
+margin-right:10px ;
+float:left;
+height: 100%;
+ color: white;
+
+
+
+}
+.inner_footer .footer_third :last-child{
+ color: white;
+
+    margin-right: 0;
+}
+.inner_footer .footer_third h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  margin-bottom:-3px ;
+
+ color: white;
+}
+
+.inner_footer .footer_third a{
+  
+  font-size: 18px;
+  color: black;
+  display: block;
+  width: 100%;
+  margin-bottom:7px ;
+  font-weight: 200;
+  padding-bottom:0px;
+color: white;
+
+}
+
+.inner_footer .footer_third img{
+width: 40px;
+margin-top:0px;
+
+display:inline-block;
+padding:0 5px;
+color: white;
+}
+  
+
+
+
+.inner_footer .logo_container span{
+
+color:white;
+font-size:18px;
+font-weight: 200;
+display:block;
+width:100%;
+padding-top:20px;
+}
+
+
+
+
+</style>
+</head>
+<body>
+      <section class="header">
+   <nav>
+      <a href="index.html"><img src="images/watches.jpeg"></a>
+     <div class="nav-links" id="navlinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+   
+   <ul>
+       <li><a href="index.html">HOME</a></li>
+       <li><a href="projects.html">ABOUT</a></li>            
+       <li><a class="active" href="contactus.html">CONTACT US</a></li>   
+       <li><a href="#"><button class="add-to-cart">Shopping List</button></a></li>    
+
+   
+    </ul>
+
+     </div>
+     <i class="fa fa-bars" onclick="showMenu()"></i>
+   </nav>
+
+
+
+
+   <div class="text-box">
+    <h1>How Our Customer Service Team Can Help You.</h1>
+    <P>At our company, we are devoted to providing excellent customer service and ensuring our customers are satisfied. Our customer service team is available to answer any questions or concerns you may have. Whether you have a billing issue, a technical issue, or a general inquiry, our team is here to help. We strive to provide a prompt and friendly response to any inquiries you may have. Thank you for choosing our company and we look forward to hearing from you.
+
+        </P>
+
+
+
+   </div>  
+
+
+
+</section>
+<br>
+    <div class="contact-form">
+        <h1>Classic Contact Form</h1>
+        <form method="post" action="">
+            <label for="first-name">First Name:</label>
+            <input type="text" name="first-name" id="first-name" required>
+            <label for="last-name">Last Name:</label>
+            <input type="text" name="last-name" id="last-name" required>
+            <label for="email">E-mail:</label>
+            <input type="text" name="email" id="email" required>
+            <label for="phone">Phone:</label>
+            <input type="text" name="phone" id="phone" required>
+            <label for="order-number">Order Number:</label>
+            <input type="text" name="order-number" id="order-number" required>
+            <label for="model-number">Model Number:</label>
+            <input type="text" name="model-number" id="model-number" required>
+            <label for="style-number">Style Number:</label>
+            <input type="text" name="style-number" id="style-number" required>
+            <p>If the model and style number are not available on the case back please call customer service.</p>
+            <label for="date-code">Date Code:</label>
+            <input type="text" name="date-code" id="date-code" required>
+            <label for="comment">Comment:</label>
+            <textarea name="comment" id="comment" required></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <br>
+     <div class="footer"> 
+
+    
+    <div class="inner_footer">
+
+    <div class="logo_container">
+
+        <img src="images/watches.jpeg"></a>
+        <span>
+
+          Watches Classic 
+  
+          Hse No.1, Moi Court, Waiyaki Way, Nairobi.
+          
+    <br>      TEL: +254 785709074 | +254 718349704  </br>
+  
+       </span>
+            
+    </div>
+
+
+
+        <div class="footer_third">
+             <h1>Quick Links</h1>
+             <a href="index.html">Home</a>
+             <a href="projects.html">About</a>
+             <a href="contact.html">Contact Us</a>
+            
+
+        </div>
+     
+  
+        <div class="footer_third">
+      
+
+          <div class="youtube">
+             <h1>More Info</h1>
+
+                   <a href="projects.html">Know about Us</a>     
+
+        </div>
+       </div>
+    
+    
+
+       <div class="footer_third">
+      
+
+      <div class="youtube">
+         <h1>Follow Us </h1>
+         
+        <img src="Circle Color/Facebook.png"></a>
+        <img src="Circle Color/Youtube.png"></a>
+        <img src="Circle Color/WhatsApp.png"></a>
+        <img src="Circle Color/Instagram.png"></a>
+
+    </div>
+   </div>
+
+             
+    </div>
+     
+    
+
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watches Classic</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+<style>                                      
+ *
+{
+   margin:0;
+   padding:0;
+   font-family: 'Poppins', sans-serif;
+}
+
+
+.header{
+
+    min-height:100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/branded.jpeg);
+  
+    background-position:center;
+    background-size:cover;
+    position:relative;
+
+}
+
+nav{
+      display: flex;
+      padding: 2% 6%;
+      justify-content: space-between;
+      align-items: center;
+
+
+}
+nav img{
+width: 150px;
+
+
+
+}
+.nav-links{
+
+flex:1;
+text-align: right;
+}
+
+.nav-links ul li{
+
+list-style-type: none;
+display: inline-block;
+padding:8px 12px ;
+position: relative;
+
+}
+
+
+.nav-links ul li a{
+
+color: white;
+text-decoration: none;
+font-size: 13px;
+}
+
+
+.nav-links ul li::after{
+      content: "";
+      width: 0%;
+      height:2px;
+      background: #f44336;
+      display: block;
+      margin: auto;
+      transition:0.5s  ;
+}
+
+.nav-links ul li:hover::after{
+
+    width: 100%;
+}
+.text-box{
+width:90%;
+color:white;
+position: absolute;
+top: 50%;
+left:50%;
+transform:translate(-50%,-50%);
+text-align:center;
+
+
+
+}
+.text-box h1{
+font-size: 62px;
+
+
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color:#fff;
+}
+.hero-btn{
+display:inline-block;
+text-decoration: none;
+color: #fff;
+border: 1px solid #fff;
+padding: 12px 34px;
+font-size: 13px;
+background: transparent;
+position: relative;
+cursor: pointer;
+
+
+
+}
+.hero-btn:hover{
+  border: 1px solid #f44336;
+  background: #f44336;
+  transition: 1s;
+
+
+}
+
+nav .fa{
+    display:none;
+
+}
+
+
+@media(max-width:700px){
+.text-box h1{
+    font-size:20px;
+}
+
+.nav-links ul li{
+  display: block;
+
+
+}
+.nav-links {
+
+    position: absolute;
+    background: #f44336;
+    height: 100vh;
+    width: 200px;
+    top:0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  
+
+}
+nav .fa{
+   display: block;
+   color: #fff;
+   margin:10px;
+   font-size: 22px;
+   cursor:pointer;
+
+
+
+
+}
+
+.nav-links ul{
+
+padding: 30px;
+
+}
+
+} 
+
+
+
+.INFOBOX{
+position: relative;
+background-color: rgb(255, 251, 251);
+text-align: center;
+padding: 20px;
+display: flex;
+flex-direction: row;
+box-shadow:gray 0 0 10px;
+margin: auto;
+
+
+}
+              
+.INFOBOX  img{
+  box-shadow:gray 0 0 10px;
+  border-radius: 50%;
+  width: 200px;}
+
+  
+ 
+
+.walls figure img{
+  border-radius: 50%;
+  width: 200px;
+}
+
+footer{
+
+  background-color:black;
+  color: white;
+  text-align: center;
+}
+
+
+.Best{
+ 
+
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top:100px ;
+
+
+}
+
+.bestinfo{
+   flex-basis:31%;
+   border-radius: 10px;
+   margin-bottom:5% ;
+   text-align:left;
+
+}
+
+
+.bestinfo img{
+
+width: 100%;
+border-radius:10px;
+
+}
+.bestinfo p{
+  padding: 0;
+}
+.bestinfo h3{
+
+margin-top: 100px;
+margin-bottom: 15px;
+text-align: left; 
+}
+
+
+.tipsinfo{
+
+  flex-basis:44%;
+  border-radius:10px;
+  margin-bottom: 5%;
+  text-align: center;
+  background: #fff3f3;
+  padding: 25px;
+  cursor: pointer;
+  display: flex;
+
+
+
+
+
+}
+
+
+
+
+.footer{
+        width:100%;
+        display:block;
+        overflow: hidden;
+        padding:4px 0;
+        box-sizing: border-box;
+        background-color:gray ;
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+   
+   url(images/watch1.png);
+   color: white;
+
+    }
+  
+
+.inner_footer{
+  display:block;
+  margin:0px auto;
+  width:1100px;
+  height: 100%;
+   color: white;
+
+}
+.inner_footer .logo_container{
+  width:25%;
+  float: left;
+  height:100%;
+  display: block;
+   color: white;
+
+}
+
+.inner_footer .logo_container img{
+
+width:50%;
+height: auto;
+ color: white;
+}
+
+
+.inner_footer .footer_third{
+
+width: calc(21.6666666667% - 20px);
+margin-right:10px ;
+float:left;
+height: 100%;
+ color: white;
+
+
+
+}
+.inner_footer .footer_third :last-child{
+ color: white;
+
+    margin-right: 0;
+}
+.inner_footer .footer_third h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  margin-bottom:-3px ;
+
+ color: white;
+}
+
+.inner_footer .footer_third a{
+  
+  font-size: 18px;
+  color: black;
+  display: block;
+  width: 100%;
+  margin-bottom:7px ;
+  font-weight: 200;
+  padding-bottom:0px;
+color: white;
+
+}
+
+.inner_footer .footer_third img{
+width: 40px;
+margin-top:0px;
+
+display:inline-block;
+padding:0 5px;
+color: white;
+}
+  
+
+
+
+.inner_footer .logo_container span{
+
+color:white;
+font-size:18px;
+font-weight: 200;
+display:block;
+width:100%;
+padding-top:20px;
+}
+
+
+
+
+                                                        
+                  </style>
+                </head>
+<body>
+      <section class="header">
+   <nav>
+      <a href="index.html"><img src="images/watches.jpeg"></a>
+     <div class="nav-links" id="navlinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+   
+   <ul>
+       <li><a href="index.html">HOME</a></li>
+       <li><a class="active" href="projects.html">ABOUT</a></li>            
+       <li><a href="contactus.html">CONTACT US</a></li>   
+       <li><a href="shopping.html"><button class="add-to-cart">Shopping List</button></a></li>    
+
+   
+    </ul>
+
+     </div>
+     <i class="fa fa-bars" onclick="showMenu()"></i>
+   </nav>
+
+
+
+
+   <div class="text-box">
+    <h1>We Don't Stop</h1>
+    <P>We believe every watch has a soul. Ours comes from a relentless pursuit of craftsmanship, quality and design. In 1854, we combined European clockmaking and African ingenuity to take clocks from the mantels of the 1% and brought them to the world.
+
+        </P>
+
+
+
+   </div>  
+
+
+
+</section>
+
+
+        <section class="INFOBOX">
+
+
+          <figure><img src="images/making.jpeg">
+              <figcaption> Making</figcaption></figure> 
+              <div class="INFOBOXDIALOUGUE">
+                  <h1>We Learned the Rules,then We Broke Them</h1>
+                 We were rebel watchmakers with a cause. Established in 1854 as the Waterbury Clock Company, we turned a 300-year-old industry upside down. We stamped our gears out of metal, instead of carving them from wood. We made smaller, more accurate movements faster than ever before. In fact, even Detroit’s automakers were inspired by our assembly lines when the automobile became a thing.                           
+                        
+              </div>
+              
+      
+      
+      </section>
+      
+      
+      <section class="INFOBOX">
+          <figure><img src="images/design.jpeg">
+              <figcaption>Design</figcaption></figure> 
+                     <div>
+                       <h1>From the Pocket to the Wrist</h1>
+                       By 1901 our movements fit in your pocket and cost just one dollar, ($35 in today’s dollars). We became the people’s watchmaker. They helped the trains run on time and helped settle the Wild West. When timepieces turned from fragile curiosities to durable everyday carries, even Mark Twain bought two.The move to the wrist just took a little ingenuity and two metal bars welded to the sides of our smallest model.                           </div>
+      </section>
+      
+
+
+       
+      <section class="INFOBOX">
+        <figure><img src="images/assuarance.png">
+            <figcaption>Quality</figcaption></figure> 
+                   <div>
+                      
+                  
+                                   <h1> Takes a Licking Keeps on Ticking</h1>
+                                   By the 1960s, our watches were so inexpensive, handsome and durable, every third watch sold in America was a Classic. Our televised torture tests, proved our mechanical superiority, of our Classic Marlin™, still a favorite after a half-century.
+                                                          </div>
+                  </section>
+    </section>
+     
+<section class="Best">
+
+    <h1>The World’s Most Popular Watch</h1>
+    <p>
+        If the Waterbury watch is our soul, the Classic Easy Reader™ is our heart. Beautiful in its simplicity, the timeless, utilitarian design quickly became ubiquitous with Classic. Since 1977, we’ve made more than 100 million. If your father had a Classic, it was probably a Classic Easy Reader™. The influence of the Easy Reader’s minimalist beauty can be seen across nearly every Classic today.
+
+
+<div class=row>
+  
+     <div class="bestinfo">
+       
+        <img src="images/one.png">
+        <h3>Let's Get Digital</h3>
+        <p>   There were many inside Classic who thought digital would be our end. What they didn’t count on was the spirit of a watch maker who’d changed the world again and again with a deep spirit of innovation.
+
+        </p>
+
+     </div>
+     <div class="bestinfo">
+       
+        <img src="images/three.png">
+        <h3>Smart Before it was Cool</h3>
+        <p> For generations we’ve held ourself to higher standards with inclusive and fair labor practices, sustainable materials and processes and by creating watches that can be worn and loved for years because of their timeless design and legendary quality.
+        </p>
+
+     </div>  <div class="bestinfo">
+       
+        <img src="images/two.png">
+        <h3>You Asked, We Listened</h3>
+        <p> We are proud of our reputation as the people’s watchmaker, our innovations and designs start with what you are asking for. Our mission has always been to respond at a price you can afford, like jeweled automatic movements under $250.
+        </p>
+
+     </div>
+
+
+     
+</div>
+
+
+</section>
+
+
+<div class="row" style="text-align: center; font-size: 7;">
+
+    <div class="tipsinfo">
+
+        <div>
+           <h1>Another</h1>
+           <h1>Bright Idea</h1>
+      <p>Remember that little dim light bulb on the side of a watch dial? We knew there was a better way, and we changed the way the world told time in the dark with a patented technology called electroluminescent. Our Indiglo® backlight made its way beyond watches to car dashboards, appliances, and even lit an escape route in 1993 at the World Trade Center.</p>
+        </div>
+    </div>
+
+    <div class="tipsinfo">
+
+        <div>
+            
+      <h1> Don’t miss a thing</h1>
+<p>We are watchmakers. Over 165 years ago, the idea of the impossible kicked off our long history of passion and innovation. We moved timekeeping from the pocket to the wrist, we traveled to space, we kept time for presidents and movie stars and elite athletes.
+Sign up to see what we create next and Don't miss a thing!</p>
+<br>
+<input type="email" id="email" name="email" placeholder="Enter an Email" />
+<input type="submit" value="Submit" />
+<p>By submitting your email address above you are agreeing to the <u>Privacy Policy</u> and <u>Terms & Conditions</u>.</p>
+            
+
+        </div>
+    </div>
+
+
+
+</div>
+  
+
+
+
+  <div class="footer"> 
+
+    
+    <div class="inner_footer">
+
+    <div class="logo_container">
+
+        <img src="images/watches.jpeg"></a>
+        <span>
+
+          Watches Classic 
+  
+          Hse No.1, Moi Court, Waiyaki Way, Nairobi.
+          
+    <br>      TEL: +254 785709074 | +254 718349704  </br>
+  
+       </span>
+            
+    </div>
+
+
+
+        <div class="footer_third">
+             <h1>Quick Links</h1>
+             <a href="index.html">Home</a>
+             <a href="projects.html">About</a>
+             <a href="contact.html">Contact Us</a>
+            
+
+        </div>
+     
+  
+        <div class="footer_third">
+      
+
+          <div class="youtube">
+             <h1>More Info</h1>
+
+                   <a href="projects.html">Know about Us</a>     
+
+        </div>
+       </div>
+    
+    
+
+       <div class="footer_third">
+      
+
+      <div class="youtube">
+         <h1>Follow Us </h1>
+         
+        <img src="Circle Color/Facebook.png"></a>
+        <img src="Circle Color/Youtube.png"></a>
+        <img src="Circle Color/WhatsApp.png"></a>
+        <img src="Circle Color/Instagram.png"></a>
+
+    </div>
+   </div>
+
+             
+    </div>
+     
+    
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>                                                
